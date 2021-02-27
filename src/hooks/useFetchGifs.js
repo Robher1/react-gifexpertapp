@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { getGits } from '../helpers/getGifs';
+import { getGifs } from '../helpers/getGifs';
 
 export const useFetchGifts = ( category ) => {
 
@@ -10,7 +10,7 @@ export const useFetchGifts = ( category ) => {
 
     useEffect(() => {
         
-        getGits( category )
+        getGifs( category )
             .then( imgs => {
                 setState({
                     data: imgs,
